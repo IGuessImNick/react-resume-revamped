@@ -7,7 +7,6 @@ import Socials from './Socials'
 const Header = () => {
   return (
     <header>
-      {/* __ conve */}
       <div className="container header__container">
         <h5>Hello, I'm</h5>
         <h1>Nick Skinner</h1>
