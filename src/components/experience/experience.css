@@ -9,10 +9,11 @@
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     transition: var(--transition);
+    /* border: 1px solid transparent; */
 }
 
 .experience__container > div:hover {
-    border: 1px solid transparent;
+    /* border: 1px solid transparent; */
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;

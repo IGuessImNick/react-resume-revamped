@@ -16,6 +16,7 @@
 .contact__option {
     background: linear-gradient(var(--color-bg-variant), transparent);
     padding: 1.2rem;
+    border: 1px solid transparent;
     border-radius: 1.2rem;
     text-align: center;
     transition: var(--transition);

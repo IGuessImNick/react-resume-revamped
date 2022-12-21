@@ -28,12 +28,14 @@ const Contact = () => {
       <h2>Contact</h2>
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <HiOutlineMail className='contact__option-icon'/>
-            <h4>Email</h4>
-            <h5>imnickskinner@gmail.com</h5>
-            <a href="mailto:imnickskinner@gmail.com" target="_blank" rel="noreferrer">Send an email</a>
-          </article>
+          <a href="mailto:imnickskinner@gmail.com" target="_blank" rel="noreferrer">
+            <article className="contact__option">
+              <HiOutlineMail className='contact__option-icon'/>
+              <h4>Email</h4>
+              <h5>imnickskinner@gmail.com</h5>
+              <a href="mailto:imnickskinner@gmail.com" target="_blank" rel="noreferrer">Send an email</a>
+            </article>
+          </a>
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
