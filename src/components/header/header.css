@@ -71,9 +71,9 @@ header {
         height: 68vh;
     }
 
-    .me {
+    /* .me {
         display: none;
-    }
+    } */
 }
 
 /* === Media Queries (Small Devices) === */
