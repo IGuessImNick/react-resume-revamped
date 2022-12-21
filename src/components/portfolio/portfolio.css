@@ -5,14 +5,14 @@
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
+    background: linear-gradient(var(--color-bg-variant), transparent);
     padding: 1.2rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .portfolio__item:hover {
+    border: 1px solid transparent;
     border-color: var(--color-primary-variant);
     background: transparent;
 }
@@ -22,14 +22,21 @@
     overflow: hidden;
 }
 
+.portfolio__image {
+    height: 15rem;
+}
+
 .portfolio__item h3 {
     margin: 1.2rem 0 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 /* === Media Queries (Medium Devices) === */

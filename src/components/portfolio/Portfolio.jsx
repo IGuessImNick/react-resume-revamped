@@ -1,56 +1,33 @@
 import React from 'react'
 import "./portfolio.css"
-import Img1 from '../../assets/portfolio1.jpg'
-import Img2 from '../../assets/portfolio2.jpg'
-import Img3 from '../../assets/portfolio3.jpg'
-import Img4 from '../../assets/portfolio4.jpg'
-import Img5 from '../../assets/portfolio5.png'
-import Img6 from '../../assets/portfolio6.jpg'
+import Img1 from '../../assets/Rise_logo.jpg'
+import Img2 from '../../assets/readme.png'
+import Img3 from '../../assets/your-next-app.jpg'
 
-const data = [
-  {
-    id: 1,
-    image: Img1,
-    title: 'Here is the title of the project',
-    github: 'https://github.com',
-    demo: 'https://github.com'
-  },
-  {
-    id: 2,
-    image: Img2,
-    title: 'Here is the title of the project',
-    github: 'https://github.com',
-    demo: 'https://github.com'
-  },
-  {
-    id: 3,
-    image: Img3,
-    title: 'Here is the title of the project',
-    github: 'https://github.com',
-    demo: 'https://github.com'
-  },
-  {
-    id: 4,
-    image: Img4,
-    title: 'Here is the title of the project',
-    github: 'https://github.com',
-    demo: 'https://github.com'
-  },
-  {
-    id: 5,
-    image: Img5,
-    title: 'Here is the title of the project',
-    github: 'https://github.com',
-    demo: 'https://github.com'
-  },
-  {
-    id: 6,
-    image: Img6,
-    title: 'Here is the title of the project',
-    github: 'https://github.com',
-    demo: 'https://github.com'
-  }
-]
+
+// const data = [
+//   {
+//     id: 1,
+//     image: Img1,
+//     title: 'Rise Blog - Under Development',
+//     github: 'https://github.com',
+//     demo: 'https://github.com'
+//   },
+//   {
+//     id: 2,
+//     image: Img2,
+//     title: 'Easy ReadMe Generator',
+//     github: 'https://github.com/IGuessImNick/homework-09-readme-generator',
+//     demo: 'https://github.com/IGuessImNick/homework-09-readme-generator'
+//   },
+//   {
+//     id: 3,
+//     image: Img3,
+//     title: 'Yours?',
+//     github: '#contact',
+//     demo: '#contact'
+//   }
+// ]
 
 
 const Portfolio = () => {
@@ -64,85 +41,55 @@ const Portfolio = () => {
 
         {/* datamap method -> wrap inside javascript {} and have element inside return() statement */}
 
-        {
+        {/* {
           data.map(({id, image, title, github, demo}) => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-img">
-                  <img src={image} alt="" />
+                  <img src={image} alt="" className='portfolio__image'/>
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn' target="_blank" rel="noreferrer">Github</a>
-                  <a href={demo} className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
+                  <a href={demo} className='btn btn-primary' target="_blank" rel="noreferrer">Visit</a>
                 </div>
               </article>
             )
           })
-        }
+        } */}
 
 
 
-        {/* <article className="portfolio__item">
+        <article className="portfolio__item">
           <div className="portfolio__item-img">
-            <img src={Img1} alt="" />
+            <img src={Img1} alt="" className='portfolio__image'/>
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Rise Blog - Under Development</h3>
           <div className="portfolio__item-cta">
             <a href="https://github.com/" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a>
+            {/* <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a> */}
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-img">
-            <img src={Img2} alt="" />
+            <img src={Img2} alt="" className='portfolio__image'/>
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Easy ReadMe Generator</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a>
+            <a href="https://github.com/IGuessImNick/homework-09-readme-generator" className='btn' target="_blank" rel="noreferrer">Github</a>
+            {/* <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a> */}
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-img">
-            <img src={Img3} alt="" />
+            <img src={Img3} alt="" className='portfolio__image'/>
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Your Next Project?</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a>
+            <a href="#contact" className='btn' >Let's Chat</a>
+            {/* <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a> */}
           </div>
         </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-img">
-            <img src={Img4} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-img">
-            <img src={Img5} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-          <div className="portfolio__item-img">
-            <img src={Img6} alt="" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/" className='btn' target="_blank" rel="noreferrer">Github</a>
-            <a href="https://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank">Live Demo</a>
-          </div>
-        </article> */}
       </div>
     </section>
   )

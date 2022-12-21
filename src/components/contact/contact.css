@@ -14,15 +14,15 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
+    background: linear-gradient(var(--color-bg-variant), transparent);
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .contact__option:hover {
+    border: 1px solid transparent;
     background: transparent;
     border-color: var(--color-primary-variant);
 }
@@ -40,6 +40,8 @@
 
 .contact__option h5 {
     color: var(--color-light);
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 /* ================== FORM STYLES ====================== */

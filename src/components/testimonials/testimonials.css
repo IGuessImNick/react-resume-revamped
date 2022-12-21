@@ -13,7 +13,7 @@
 }
 
 .testimonial {
-    background: var(--color-bg-variant);
+    background: linear-gradient(var(--color-bg-variant), transparent);
     text-align: center;
     padding: 2rem;
     border-radius: 2rem;

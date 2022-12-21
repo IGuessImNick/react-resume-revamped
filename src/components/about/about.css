@@ -16,6 +16,7 @@
 
 .about__me-img {
     border-radius: 2rem;
+    width: 100%;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
@@ -32,8 +33,7 @@
 }
 
 .about__card {
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
+    background: linear-gradient(var(--color-bg-variant), transparent);
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
@@ -41,6 +41,7 @@
 }
 
 .about__card:hover {
+    border: 1px solid ;
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;

@@ -5,14 +5,14 @@
 }
 
 .experience__container > div {
-    background: var(--color-bg-variant);
+    background: linear-gradient(var(--color-bg-variant), transparent);
     padding: 2.4rem 5rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .experience__container > div:hover {
+    border: 1px solid transparent;
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;

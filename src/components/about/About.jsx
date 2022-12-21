@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import AboutMe from '../../assets/me-about.jpg'
+import AboutMe from '../../assets/me-outside.jpg'
 import {BsAward} from 'react-icons/bs'
 import {FiUsers} from 'react-icons/fi'
 import {AiOutlineFolderOpen} from 'react-icons/ai'
@@ -22,22 +22,22 @@ const About = () => {
             <article className='about__card'>
               <BsAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>3+ Years Content Creation & Design </small>
             </article>
             <article className='about__card'>
               <FiUsers className='about__icon'/>
               <h5>Clients</h5>
-              <small>200+ so many worldwide</small>
+              <small>Growing constantly!</small>
             </article>
             <article className='about__card'>
               <AiOutlineFolderOpen className='about__icon'/>
               <h5>Projects</h5>
-              <small>An innumerable amount</small>
+              <small>Always looking for more!</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, tempore. Facere sequi aspernatur porro possimus nemo vel inventore eos tempore voluptate, quos asperiores corrupti, obcaecati ipsum rerum ea commodi doloribus.
+            Thanks for checking out my portfolio! This whole website was created with React.js and simple CSS tricks. My name is Nick, I am a Full Stack Developer with an eye for design and cool online effects. In my spare time I write music, design games, and take walks to look for friendly neighborhood cats.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Chat</a>
